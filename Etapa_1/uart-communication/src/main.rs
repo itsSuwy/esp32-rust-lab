@@ -26,5 +26,5 @@ fn main() {
     write!(uart, "Value of x is: {x}\n").unwrap(); // Si imprime la variable x
     writeln!(uart, "Another way to print!").unwrap(); // Forma tres para escribir en UART
     // Fase 2: Recibir informacion TODO
-    // Fase 3: Implementar RTS y CTS
+    // Fase 3: Implementar RTS y CTS TODO
 }

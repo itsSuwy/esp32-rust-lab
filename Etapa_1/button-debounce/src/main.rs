@@ -35,13 +35,14 @@ fn boton_control_down(boton: &PinDriver<Input>) -> bool{ // Evalua si el boton e
     boton.is_high() // confirma si sigue presionado tras el delay
 }
 fn wait_for_release_down(boton: &PinDriver<Input>) { // Filtra posibles rebotes
-    FreeRtos::delay_ms(100);
+    FreeRtos::delay_ms(30);
     while !boton.is_low(){
         FreeRtos::delay_ms(5);
     }
 }
 
-// Funciones exclusivas para variante 3 (Pull up)
+// Funciones exclusivas para variante 3 (Pull up) | Descomentar aqui y en su llamado al main si se pretende utilizar
+/*
 fn func_pull_up(button: &PinDriver<Input>, led: &mut PinDriver<Output>){ // Logica principal del pull up
     loop{
         if !boton_control_up(&button){ // Retorna false cuando el boton este presionado
@@ -63,8 +64,9 @@ fn boton_control_up(boton: &PinDriver<Input>) -> bool{
 }
 
 fn wait_for_release_up(boton: &PinDriver<Input>) { // FIltra posibles rebotes
-    FreeRtos::delay_ms(100);
+    FreeRtos::delay_ms(30);
     while !boton.is_high(){
         FreeRtos::delay_ms(5);
     }
 }
+ */

@@ -12,7 +12,8 @@ Esta practica consistio en resolver el problema de Bounce mediante los dos metod
 - 1 capacitor menor a 1uF **(Opcional)**.
 
 ### ¿Que es el Bounce?
-Comunmente el fenomeno de Bounce (Rebote en Espaniol) se presenta cuando un contacto mecanico cambia de estado: abierto->cerrado o viceversa.
+Comunmente el fenomeno de Bounce (Rebote en Espaniol) se presenta cuando un contacto mecanico cambia de estado: abierto->cerrado o viceversa.  
+
 ![Imagen_del_Rebote](media/Switch-Bouncing-in-the-Circuit.png)  
 [1] P. Khatri, "What is Switch Bouncing and How to prevent it using Debounce Circuit," Circuit Digest, Jan. 6, 2022. [Online]. Available: https://circuitdigest.com/electronic-circuits/what-is-switch-bouncing-and-how-to-prevent-it-using-debounce-circuit. [Accessed: Jul. 23, 2026].
 

@@ -13,7 +13,7 @@ fn main() {
     let mut pin_rojo = LedcDriver::new(peripherals.ledc.channel0, timer_driver, pins.gpio18).unwrap();
     loop {
         for i in 0u8..=100{
-            pin_rojo.set_duty_cycle_percent(i).unwrap(); //
+            pin_rojo.set_duty_cycle_percent(i).unwrap();
             log::info!("Duty cycle: {i}");
             FreeRtos::delay_ms(50);
         }
